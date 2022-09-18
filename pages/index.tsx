@@ -80,7 +80,7 @@ const StakePage = () => {
             }}
             onClick={handleInitStakingButtonClick}
           >
-            Init staking account
+            Start Staking!
           </Button>
         ) : (
           <>

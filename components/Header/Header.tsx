@@ -37,7 +37,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
             <Flex as="a" sx={{ alignItems: "center", flexDirection: "column" }}>
               <Flex sx={{ alignItems: "center" }}>
                 <Text as="h1" variant="headingSpecial" ml=".4rem">
-                  GEM
+                J
                 </Text>
 
                 <img
@@ -49,7 +49,7 @@ const Header = ({ farmId, setFarmId }: Props) => {
                 />
 
                 <Text as="h1" variant="headingSpecial" ml=".4rem">
-                  FARM
+                  Labs
                 </Text>
               </Flex>
               {/* <Text
@@ -127,33 +127,6 @@ const Header = ({ farmId, setFarmId }: Props) => {
             >
               <CloseIcon />
             </Button>
-            {isChangingFarmId && (
-              <Input
-                sx={{
-                  fontSize: "1.1rem",
-                  padding: ".4rem",
-                  border: "none",
-                  borderBottom: "1px solid",
-                  borderRadius: 0,
-                  width: "auto",
-                }}
-                value={farmId}
-                onChange={(e) => setFarmId(e.target.value)}
-              />
-            )}
-
-            <a
-              tabIndex={0}
-              sx={{
-                margin: "0 auto",
-                fontSize: "1.1rem",
-                whiteSpace: "nowrap",
-              }}
-              onClick={() => setIsChangingFarmId((prev) => !prev)}
-            >
-              (Change Farm ID)
-            </a>
-
             <WalletManager />
           </Flex>
           <Button
